@@ -18,7 +18,7 @@ const typeIntensityAndExercise = {
     }
 }
 
-const isValidInput = (input, min, max) => input < min || input > 3;
+const isValidInput = (input, min, max) => input < min || input > max;
 
 let exerciseType = Number(prompt('Ingrese el tipo de ejercicio \n 1) Correr \n 2) Nadar \n 3) Andar en bicicleta'));
 if(isValidInput(exerciseType, 1, 3)) {
